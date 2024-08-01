@@ -27,7 +27,7 @@ const AddProduct = ({ onAdd }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post("https://simple-management-system-b9g5u6e83.vercel.app/api/products", product);
+    const res = await axios.post("https://simple-management-system.onrender.com/api/products", product);
     onAdd(res.data);
     setProduct({
       name: "",
