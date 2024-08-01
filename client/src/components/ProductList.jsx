@@ -7,7 +7,7 @@ const ProductList = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get("https://simple-management-system-b9g5u6e83.vercel.app/api/products");
       setProducts(res.data);
     };
 
@@ -15,7 +15,7 @@ const ProductList = () => {
   }, []);
 
   const handleRemove = async (id) => {
-    await axios.delete(`http://localhost:5000/api/products/${id}`);
+    await axios.delete(`https://simple-management-system-b9g5u6e83.vercel.app/api/products/${id}`);
     setProducts(products.filter((product) => product._id !== id));
   };
 
