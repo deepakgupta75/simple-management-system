@@ -21,8 +21,7 @@ app.use(bodyParser.json());
 app.use(cors()); 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://deepakgupta75066:9bXgDIKHnEOoQREU@cluster0.15vsvbs.mongodb.net/simple-management-system?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  
 });
 
 const db = mongoose.connection;
